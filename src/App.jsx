@@ -1,5 +1,5 @@
 import Header from "./Components/Header";
-import Filters from "./Components/FIlters";
+import Filters from "./Components/Filters";
 import PropertiesList from "./Components/PropertiesList";
 import { createContext, useState } from "react";
 import { Data } from "./Data";
