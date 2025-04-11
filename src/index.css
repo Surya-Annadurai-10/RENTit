@@ -9,3 +9,7 @@
 select{
   appearance: none;
 }
+
+.shadow{
+  box-shadow: 1px 10px 10px rgb(182, 182, 182);
+}

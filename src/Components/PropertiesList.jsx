@@ -11,8 +11,8 @@ const PropertiesList = () => {
     if (!ctx.favProperty.length == 0) {
       return (
         <>
-          {ctx.favProperty.map((ele) => {
-            return <PropertiesCard {...ele} />;
+          {ctx.favProperty.map((ele , i) => {
+            return <PropertiesCard key={`new${i + Math.random()}`} {...ele} />;
           })}
         </>
       );
@@ -31,8 +31,8 @@ const PropertiesList = () => {
     if (!ctx.filtered.length == 0) {
       return (
         <>
-          {ctx.filtered.map((ele) => {
-            return <PropertiesCard {...ele} />;
+          {ctx.filtered.map((ele , i) => {
+            return <PropertiesCard key={`newfil${i +Math.random()}`} {...ele} />;
           })}
         </>
       );

@@ -69,7 +69,7 @@ const Filters = () => {
       );
     });
 
-    console.log(filtered);
+    // console.log(filtered);
     
 
     ctx.setFiltered(filtered);
@@ -111,7 +111,7 @@ const Filters = () => {
     ctx.setFilter(obj);
   };
 
-  console.log(ctx.filter, "filter");
+  // console.log(ctx.filter, "filter");
 
   return (
     <section className="px-[2vw] text-[#212529] w-full h-[13vh] mt-5 flex  items-center justify-center ">
@@ -127,7 +127,7 @@ const Filters = () => {
           {Data.map((ele, i) => {
             return (
               <option
-                key={`${ele.location}_${i}_location`}
+                key={`${ele.location}_${i + Math.random()}_location`}
                 value={ele.location}
               >
                 {ele.location}
@@ -173,7 +173,7 @@ const Filters = () => {
           <option value="">All</option>
           {removeDuplicates().map((ele, i) => {
             return (
-              <option key={`${ele}_${i}_remove`} value={ele}>
+              <option key={`${ele}_${i + Math.random()}_remove`} value={ele}>
                 {ele}
               </option>
             );
