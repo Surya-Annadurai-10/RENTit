@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Data } from "../Data";
 import { DataContext } from "../App";
+import { IoArrowForward } from "react-icons/io5";
 
 const Filters = () => {
   const ctx = useContext(DataContext);
@@ -183,9 +184,15 @@ const Filters = () => {
       <div className="bg-[#F8F9FA] w-[8%] flex items-center justify-center gap-4 h-full">
         <button
           onClick={handleFilter}
-          className="w-[80px] rounded h-[5vh] bg-[#0D6EFD] text-white"
+          className="w-[80px] lg:block hidden rounded h-[5vh] bg-[#0D6EFD] text-white"
         >
           Submit
+        </button>
+        <button
+          onClick={handleFilter}
+          className="lg:w-[80px] rounded-full w-[40px] h-[40px] grid place-items-center lg:hidden lg:rounded lg:h-[5vh] bg-[#0D6EFD] text-white"
+        >
+          <IoArrowForward style={{fontSize : "1.5rem"}}/>
         </button>
       </div>
     </section>

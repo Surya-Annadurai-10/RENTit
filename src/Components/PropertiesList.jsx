@@ -49,7 +49,7 @@ const PropertiesList = () => {
 
 
   return (
-    <main className="flex items-center w-[85%] min-h-[60vh] my-10 m-auto justify-start flex-wrap gap-4">
+    <main className="flex items-center w-[85%] min-h-[60vh] my-10 m-auto justify-center lg:justify-start flex-wrap gap-4">
       {ctx.showLiked ? (
         likedFn()
       ) : (

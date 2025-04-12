@@ -71,7 +71,7 @@ const PropertiesCard = (props) => {
    
   };
   return (
-    <div className="w-[20vw]  h-[55vh] border border-[#cdcdcd]  rounded-md overflow-hidden ">
+    <div className="w-[310px]  h-[55vh] border border-[#cdcdcd]  rounded-md overflow-hidden ">
       <div className="w-[full] h-[60%] object-center ">
         <img className="w-full h-full" src={props.image} alt="property-img" />
       </div>
