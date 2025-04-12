@@ -115,8 +115,8 @@ const Filters = () => {
   // console.log(ctx.filter, "filter");
 
   return (
-    <section className="px-[2vw] text-[#212529] w-full h-[13vh] mt-5 flex  items-center justify-center ">
-      <div className="bg-[#F8F9FA] px-3 border-r-1 border-[#dedede] w-[23%] h-full flex-col  flex items-start justify-center gap-1">
+    <section className="px-[2vw] text-[#212529] w-full  md:gap-0 lg:h-[13vh] mt-5 flex-col md:flex-row flex   items-center justify-center ">
+      <div className="bg-[#F8F9FA] md:py-0 py-3 px-3 border-r-1 border-[#dedede] w-full md:w-[23%] h-full flex-col  flex items-start justify-center gap-1">
         <h1 className="text-md">Enter City</h1>
         <select
           onChange={(e) => handleCity(e.target.value)}
@@ -137,7 +137,7 @@ const Filters = () => {
           })}
         </select>
       </div>
-      <div className="bg-[#F8F9FA] px-3 border-r-1 border-[#dedede] w-[23%] h-full flex-col  flex items-start justify-center gap-1">
+      <div className="bg-[#F8F9FA]  md:py-0 py-3 px-3 border-r-1 border-[#dedede] w-full md:w-[23%] h-full flex-col  flex items-start justify-center gap-1">
         <h1>Date</h1>
         <input
           onChange={(e) => handleDate(e.target.value)}
@@ -146,7 +146,7 @@ const Filters = () => {
           required
         />
       </div>
-      <div className="bg-[#F8F9FA] px-3 border-r-1 border-[#dedede] w-[23%] h-full flex-col  flex items-start justify-center gap-1">
+      <div className="bg-[#F8F9FA]  md:py-0 py-3 px-3 border-r-1 border-[#dedede] w-full md:w-[23%] h-full flex-col  flex items-start justify-center gap-1">
         <h1>Price</h1>
         <select
           onChange={(e) => handlePrice(e.target.value)}
@@ -163,7 +163,7 @@ const Filters = () => {
           <option value="6000-7000">Rs. 6000-7000</option>
         </select>
       </div>
-      <div className="bg-[#F8F9FA] px-3 border-r-1 border-[#dedede] w-[23%] h-full flex-col  flex items-start justify-center gap-1">
+      <div className="bg-[#F8F9FA]  md:py-0 py-3 px-3 border-r-1 border-[#dedede] w-full md:w-[23%] h-full flex-col  flex items-start justify-center gap-1">
         <h1>Property Type</h1>
         <select
           onChange={(e) => handleType(e.target.value)}
@@ -181,16 +181,16 @@ const Filters = () => {
           })}
         </select>
       </div>
-      <div className="bg-[#F8F9FA] w-[8%] flex items-center justify-center gap-4 h-full">
+      <div className="bg-[#F8F9FA]  md:py-0 py-3 w-[25%] md:w-[8%] flex items-center justify-center gap-4 h-full">
         <button
           onClick={handleFilter}
-          className="w-[80px] lg:block hidden rounded h-[5vh] bg-[#0D6EFD] text-white"
+          className="lg:w-[80px] lg:block w-[150px] md:hidden rounded h-[5vh] bg-[#0D6EFD] text-white"
         >
           Submit
         </button>
         <button
           onClick={handleFilter}
-          className="lg:w-[80px] rounded-full w-[40px] h-[40px] grid place-items-center lg:hidden lg:rounded lg:h-[5vh] bg-[#0D6EFD] text-white"
+          className="lg:w-[80px] rounded-full w-[40px] h-[40px] lg:hidden md:grid place-items-center hidden lg:rounded lg:h-[5vh] bg-[#0D6EFD] text-white"
         >
           <IoArrowForward style={{fontSize : "1.5rem"}}/>
         </button>
