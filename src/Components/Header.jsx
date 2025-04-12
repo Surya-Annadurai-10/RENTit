@@ -93,7 +93,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full relative h-[10vh] sticky top-0  bg-[#F8F9FA] flex justify-between items-center px-[2vw]">
+    <header className="w-full  h-[10vh] sticky top-0  bg-[#F8F9FA] flex justify-between items-center px-[2vw]">
       <div className="md:w-[20%] w-[15%] lg:w-[33%]">
         <h1
           onClick={() => ctx.setShowLiked(!ctx.showLiked)}
