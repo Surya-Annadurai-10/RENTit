@@ -108,11 +108,13 @@ const Filters = () => {
       ...ctx.filter,
       type: val,
     };
-
+   console.log(obj , "filtered value");
+   
     ctx.setFilter(obj);
   };
 
   // console.log(ctx.filter, "filter");
+  // console.log(type, "filter");
 
   return (
     <section className="px-[2vw] text-[#212529] w-full  md:gap-0 lg:h-[13vh] mt-5 flex-col md:flex-row flex   items-center justify-center ">
@@ -167,6 +169,7 @@ const Filters = () => {
         <h1>Property Type</h1>
         <select
           onChange={(e) => handleType(e.target.value)}
+          value={ctx.filter.type}
           className="w-[96%] h-[5vh] border border-[#dedede] rounded px-3"
           name=""
           id=""
@@ -220,6 +223,6 @@ const removeDuplicates = () => {
     }
   });
 
-  //    console.log(uniqueTypes);
+     console.log(uniqueTypes);
   return uniqueTypes;
 };

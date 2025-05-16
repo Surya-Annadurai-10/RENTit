@@ -20,6 +20,7 @@ const Header = () => {
   const [showOptions, setShowOptions] = useState(false);
   const [showOptionsVal, setShowOptionsVal] = useState([]);
   const inputRef = useRef("");
+
   const handleSearch = () => {
     console.log(inputVal);
 
@@ -36,7 +37,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (inputVal) {
+    // if (inputVal) {
       console.log(inputVal);
       let val = inputVal;
       let fil = ctx.filtered.filter((ele) => {
@@ -48,7 +49,7 @@ const Header = () => {
       });
       console.log(fil, "fil");
       setShowOptionsVal([...fil]);
-    }
+    // }
   }, [inputVal]);
 
   const showIcon = (type) => {
@@ -82,6 +83,8 @@ const Header = () => {
   const handleShowSearch = (e) => {
     setInputVal(e.target.value);
     setShowOptions(true);
+
+ 
   };
 
   const handleOptionsClick = (id) => {
