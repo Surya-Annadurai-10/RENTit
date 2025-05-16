@@ -122,6 +122,7 @@ const Filters = () => {
         <h1 className="text-md">Enter City</h1>
         <select
           onChange={(e) => handleCity(e.target.value)}
+          value={ctx.filter.city}
           className="w-[96%] h-[5vh] border border-[#dedede] rounded px-3"
           name=""
           id=""
